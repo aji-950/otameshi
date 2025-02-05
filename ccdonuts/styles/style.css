@@ -1,0 +1,670 @@
+@charset "utf-8";
+
+body {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  max-width: 1366px;
+  background-color: #FFF;
+}
+
+
+header {
+    background-color: #EDE0D4;
+}
+.ctopLogo img {
+    width: 87px;
+    height: 78px;
+    margin: 20px 0 0 0;
+}
+.ctopLogo {
+    display: flex;
+    justify-content: center;
+}
+.loginCart ul {
+    margin: 0 95px 0 0;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    position: relative;     
+}
+.loginCart li {
+    margin: 0 0 32px 40px;
+}
+.loginCart a:hover {
+    filter: drop-shadow(7px 7px 10px #BF0000);
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+.navbar {
+    width: 100%;
+}
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+.navbar .menuItems {
+    display: flex;
+}
+.menuItems img {
+    width: 87px;
+    height: 78px;
+}
+.navbar .navContainer li {
+    list-style: none;
+}
+.navbar .navContainer a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+.navbar .navContainer a:hover{
+    text-decoration: underline;
+    color: #B392AC;
+}  
+.navContainer {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+.navContainer .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}  
+.navContainer .hamburgerLines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navContainer .hamburgerLines .line {
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    background: #7F5539;
+}
+.navContainer .hamburgerLines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}  
+.navContainer .hamburgerLines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+.navContainer .hamburgerLines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+.navbar .menuItems {
+    padding-top: 120px;
+    background-color: rgba(99, 41, 2, 0.5);
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+.navbar .menuItems li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.navContainer input[type="checkbox"]:checked ~ .menuItems {
+    transform: translateX(0);
+}  
+.navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line1 {
+    transform: rotate(45deg);
+}  
+.navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line2 {
+    transform: scaleY(0);
+}  
+.navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line3 {
+    transform: rotate(-45deg);
+}  
+.navContainer input[type="checkbox"]:checked ~ .logo{
+    display: none;
+}
+
+
+.sarchWindow {
+    display: flex;
+    justify-content: right;
+    background-color: #B392AC;
+}
+.searchForm1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid #7F5539;
+    border-radius: 3px;
+    height: 40px;
+    margin: 12px 95px 12px 0;
+}
+.searchForm1 input {
+    width: 250px;
+    height: 45px;
+    padding: 5px 15px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1em;
+    outline: none;
+    background-color: #FFF;
+}
+.searchForm1 input::placeholder{
+    color: #000;
+}
+.searchForm1 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 45px;
+    border: none;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+.searchForm1 button::after {
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/pcSearch.png");
+    background-repeat: no-repeat;
+    content: '';
+}
+
+
+.gest p {
+    padding: 12px 0 12px 103px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.heroImg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.newAnd {
+    text-align: center;
+    margin: 80px 0 0 0;
+}
+.newAnd a:hover {
+    filter: drop-shadow(7px 7px 10px #7F5539);
+}
+.newAnd img {
+    margin: 0 40px;
+}
+
+.dlist {
+    text-align: center;
+    margin: 80px 0;
+}
+.dlist a:hover {
+    filter: drop-shadow(7px 7px 10px #7F5539);
+}
+
+.introImg {
+    margin: 0 0 80px 0;
+}
+.introImg img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ranking h1 {
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 120px 0;
+    font-weight: 400;
+}
+.under  {text-decoration: underline; text-decoration-color: #FFD233;}
+.ranking p {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #7F5539;
+    font-weight: 500;
+}
+.ranking a {
+    font-size: 20px;
+    padding: 12px 0;
+    font-weight: 400;
+}
+.ranking {
+    counter-reset: rank;
+}
+.ranking ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 80px;
+}
+.ranking li {
+    margin: 0 0 120px 0;
+    padding: 0 30px;
+    position: relative;
+}
+.ranking li::before { 
+    counter-increment: rank;
+    content: counter(rank) " 位";
+    position: absolute;
+    padding: 8px 14px;
+    font-size: 1.2em;
+    color: #fff; 
+    background: #000;
+}
+
+.price {
+    font-size: 24px;
+    color: #FF0000;
+    font-weight: 400;
+}
+
+.button01 {
+    background-color: #7F5539;
+    color: #fff;
+    margin: 20px 30px 0 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    height: 52px;
+}
+.button01:hover {
+    background: #EDE0D4;
+    color: #7F5539;
+}
+
+
+.breadCrumb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 12px 0 12px 103px;
+    border-bottom: 1px solid #7F5539;
+    font-size: 12px;
+    font-weight: 400;
+}
+.breadCrumb li:not(:last-of-type)::after {
+    content: ">";
+    margin: 0 .6em;
+    color: #7F5539;
+}
+
+.gest02 {
+    padding: 12px 0 12px 103px;
+    border-bottom: 1px solid #7F5539;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.mlTitle {
+    text-align: center;
+    font-size: 32px;
+    margin: 80px 0;
+    font-weight: 400;
+}
+.mlTitle {text-decoration: underline; text-decoration-color: #FFD233;}
+
+.mainSub {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #7F5539;
+    margin: 0 0 120px 0;
+    padding: 80px 0 0 0;
+}
+
+.mainMenu {
+    margin: 0 0 120px 0;
+}
+.mainMenu p {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #7F5539;
+    font-weight: 500;
+}
+.mainMenu a {
+    font-size: 20px;
+    padding: 12px 0;
+}
+.mainMenu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 80px;
+}
+.mainMenu li {
+    margin: 0 0 120px 0;
+    padding: 0 30px;
+    position: relative;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin: 80px 80px;
+}
+.flex .image {
+    width: 540px;
+    height: 540px;
+}
+.flex .image img {
+    width: 100%;
+    height: auto;
+}
+.flex .right {
+    margin: 0 0 0 40px;
+    padding: 0;
+}
+.flex .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7F5539;
+}
+.flex .text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #7F5539;
+}
+.flex hr {
+    margin: 40px 0;
+}
+.cButton {
+    background-color: #7F5539;
+    color: #fff;
+    padding: 16px 60px;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    margin: 64px 0 0 0;
+    width: 260px;
+    height: 52px;
+}
+.cButton:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+
+input {
+    border: 1px solid #7F5539;
+}
+form {
+    margin: 80px 0;
+    text-align: center;
+    color: #7F5539;
+}
+
+
+.footerLeft {
+    color: #7F5539;
+    background: #EDE0D4;
+    padding: 32px 0 30px 0;
+}
+.footerLeft a {
+    color: #7F5539;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footerLeft a:hover {
+    text-decoration: underline;
+}
+.footerLeft .menu {
+    margin: 0 0 0 102px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerLeft .menu li {
+    margin: 0;
+    padding: 0 20px;
+    border-left: 2px #B392AC solid;
+}
+.snsBtn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+}
+.snsBtn li {
+    width: 40px;
+    margin: 0 10px;
+}
+.snsBtn a:hover {
+    filter: drop-shadow(7px 7px 10px #7F5539);
+}
+.footerLeft .copyright {
+    margin: 0;
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-weight: 400;
+    border-top: 1px solid #7F5539;
+}
+.centerLogo img {
+    width: 144px;
+    height: 128px;
+}
+.centerLogo {
+    display: flex;
+    justify-content: center;
+    margin: 64px 0 72px 0;
+}
+
+
+@media only screen and (max-width: 375px) {
+    
+    .ctopLogo img {
+        margin: 16px 0 0 0;
+        width: 70px;
+        height: 60px;
+    }
+    .loginCart li {
+        margin: 0 12px 12px 12px;
+    }
+    
+    .loginCart ul {
+        margin: 0;
+    }
+
+    .searchForm1 {
+        margin: 12px 8px;
+    }
+    .sarchWindow {
+        justify-content: center;
+        background-color: #EDE0D4;
+    }
+
+    .gest p {
+        padding: 12px 0 12px 20px;
+    }
+    .breadCrumb, .gest02 {
+        padding: 12px 0 12px 20px;
+    }
+
+    .newAnd img {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .newAnd {
+        display: flex;
+        margin: 0;
+    }
+    .dlist img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .dlist {
+        margin: 0 20px 20px 20px;
+    }
+    .introImg img {
+        max-width: none;
+        object-fit: cover;
+        width: 375px;
+        height: 568px;
+    }
+    .introImg {
+        margin: 0 0 31px 0;
+    }
+
+    .ranking h1 {
+        font-size: 20px;
+        margin: 0 117px 80px 118px;
+        font-weight: 400;
+    }
+    .ranking img {
+        width: 157px;
+        height: 157px;
+    }
+    .ranking p {
+        font-size: 16px;
+    }
+    .button01 {
+        margin: 20px 0 0 0;
+        width: 148px;
+        height: 36px;
+    }
+    .ranking a {
+        font-size: 12px;
+        padding: 12px 32px;
+        font-weight: 400;
+    }
+    .ranking ol {
+        margin: 0;
+    }
+    .ranking li {
+        margin: 0 0 80px 0;
+        padding: 0 10px;
+        flex-basis: 30%;
+    }
+
+    .mlTitle {
+        margin: 30px 0 20px 0;
+        font-size: 20px;
+    }
+    .mainSub {
+        margin: 0 0 80px 0;
+        padding: 30px 0 0 0;
+        font-size: 16px;
+    }
+    .mainMenu a {
+        font-size: 12px;
+        padding: 12px 32px;
+    }
+    .mainMenu p {
+        font-size: 16px;
+    }
+    .mainMenu img {
+        width: 157px;
+        height: 157px;
+    }
+    .mainMenu ul {
+        margin: 0;
+    }
+    .mainMenu li {
+        margin: 0 0 80px 0;
+        padding: 0 10px;
+        flex-basis: 30%;
+    }
+
+    .flex {
+        display: block;
+        margin: 80px 20px;
+    }
+    .flex .right {
+        margin: 20px 20px;
+        padding: 0;
+    }
+    .flex .image img {
+        width: 335px;
+        height: 335px;
+    }
+    .flex .image {
+    width: 335px;
+    height: 335px;
+    }
+    .flex .title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #7F5539;
+    }
+    .flex .text {
+        font-size: 16px;
+        font-weight: 500;
+        color: #7F5539;
+    }
+    .flex hr {
+        margin: 20px 0;
+        width: 100%;
+    }
+    .price {
+        font-size: 16px;
+    }
+    .cButton {
+        font-size: 12px;
+        padding: 12px 38px;
+        margin: 40px 107px 0 107px;
+        width: 160px;
+        height: 36px;
+    }
+
+    .footerLeft {
+        padding: 12px 0 0 0;
+    }
+    .footerLeft .menu {
+        display: block;
+        margin: 0 0 0 12px;
+    }
+    .footerLeft .menu li {
+        margin: 28px 0;
+        padding: 0 20px;
+        border-left: 2px #B392AC solid;
+    }
+    .footerLeft a {
+        font-size: 12px;
+    }
+    .centerLogo img {
+        width: 72px;
+        height: 64px;
+    }
+    .centerLogo {
+        margin: 0 20px 8px 0;
+        display: flex;
+        justify-content: right;
+    }
+    .snsBtn {
+        justify-content: left;
+        margin: 0 0 40px 12px;
+    }
+    .footerLeft .copyright {
+        margin: 0;
+        padding: 12px 0 12px 0;
+        text-align: center;
+        font-weight: 400;
+        border-top: 1px solid #7F5539;
+    }
+}
